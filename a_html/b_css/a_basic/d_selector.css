@@ -1,0 +1,44 @@
+/* 전체 선택자: * 기호 */
+* {
+  color: lightcoral;
+  /*
+  모든 웹 문서에는 기본
+  여백이 존재
+  */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* 타입 선택자: 태그명 */
+h2 {
+  color: blue;
+}
+
+p {
+  color: green;
+}
+
+ul {
+  background-color: lightblue;
+}
+
+.bin {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.primary {
+  background-color: green;
+  color: yellow;
+}
+
+.secondary {
+  font-weight: 900;
+  padding: 10px;
+}
+
+div, a, .primary {
+  text-decoration: underline;
+}

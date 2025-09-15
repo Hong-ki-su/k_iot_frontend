@@ -1,0 +1,10 @@
+/* b_practice.css */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  baxkground-color: lightgolden;
+}

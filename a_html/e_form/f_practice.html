@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>f_practice.html</title>
+</head>
+<body>
+  <h1>롯데 자이언츠 선수단 응원메시지 이벤트</h1>
+  <form>
+    <fieldset>
+      <legend>선수단을 응원하고 경품 받자</legend>
+      <ul>
+        <li>
+          <label>
+            아이디 <input type="text" id="id" autofocus 
+            placeholder="4자 ~ 10자 사이, 공백없이">
+          </label>
+        </li>
+        <li>
+          <label>
+            이메일 <input type="text">
+          </label>
+        </li>
+        <li>
+          <label>
+            메모 <input type="text">
+          </label>
+        </li>
+      </ul>
+      <label for="giveaway">경품 목록</label>
+      <input type="text" id="giveaway" list="giveawayList" placeholder="선수단 사인볼">
+      <datalist id="giveawayList">
+        <option value="lotte" />
+        <option value="LG">엘지</option>
+        <option value="samsung">삼성 자이언츠</option>
+    </datalist>
+  </fieldset>
+  <fieldset>
+    <legend>이벤트 결과와 새로운 소식</legend>
+    <label>
+        <input type="radio" value="email" name="winner"> 메일 수신
+      </label>
+    <label>
+        <input type="radio" value="email" name="winner"> 메일 수신 안 함 
+      </label>
+  </fieldset>
+</form>
+</body>
+</html>
