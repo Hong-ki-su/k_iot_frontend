@@ -9,21 +9,33 @@
       border: 1px solid black;
       width: 500px;
       height: 400px;
+
+      display: flex;
+      flex-direction: column;
     }
-    .inner {
+    .row {
       width: 100%;
       height: 100px;
+      space-between;
+      flex-wrap: wrap;
+      margin: 5px 0;
     }
     .box {
       border: 1px solid black;
-      width: 100px;
+      width: 5px;
       height: 100px;
+
+      background-color: lightgoldenrodyellow;
+      flex: 1;
+    }
+    .box.large {
+     flex: 2;
     }
   </style>
 </head>
 <body>
   <div id="container">
-    <div class="inner" id="first">
+    <div class="row">
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
