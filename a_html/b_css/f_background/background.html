@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background.html</title>
+  <style>
+    .background {
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 10px dotted #222;
+      background-color: #ffd9a0;
+      display: inline-block;
+    }
+    #border {background-clip: border-box;}
+    #padding {background-clip: padding-box;}
+    #content {background-clip: content-box;}
+
+    #images {
+      width: 100%;
+      height: 1000px;     
+
+      background-image: url('../고양이이미지.jpg');
+      background-repeat: repeat-x;
+      background-repeat: repeat-y;
+      background-repeat: no-repeat;
+
+      background-position: 50px 50px;
+
+    }
+
+     
+  </style>
+</head>
+<body 
+style="
+  margin: 0;
+  height: 2000px;
+
+  background-image: url('../고양이이미지.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+">
+    
+
+  <!-- 
+  ? cf) CSS 상속 
+  : 하위 요소에 대해 CSS 속성을 지정하지 않은 경우 
+  , 기본적으로 상위 요소에 적용된 스타일이 부여 
+
+  - 너비/높이값은 상속되지 않음 
+  background-color(배경색)도 상속되지 않음
+
+  ! background-color 속성: 배경색 지정 
+  2. background-clip 속성: 배경색 적용 범위 조절 
+ ! 3. background-image 속성: 웹 요소에 이미지 삽입 
+  >> URL (이미지 파일 경로 )
+  ! 4. background-repeat 속성: 배경 이미지 반복 
+  5. background-position 속성: 배경 이미지 위치 조절 (수평/수직)
+  6. background-origin 속성 (clip 동일)
+  7. backkground-attachment 속성: 배경이미지 고정
+
+  > background 속성 (축약 속성)
+  -->
+
+  <div style="
+  /* inherit: 선택한 요소에 적용된 속성값을 부모 요소의 속성값과 동일하게 지정 */
+  font-size: 20px;
+   color: lightcoral;
+
+   background-color: lightblue;
+   width: 200px;
+   height: 100px;
+  ">
+    <div style="
+    background-color: inherit;
+    ">
+      <p>안녕하세요 만나서 반갑습니다: )</p>
+    </div>
+  </div>
+
+  <hr />
+  <div id="container">
+   <div class="background" id="border"></div>
+   <div class="background" id="padding"></div>
+   <div class="background" id="content"></div>
+  </div>
+
+   
+  <hr />
+  <div id="images"></div>
+
+  <hr />
+
+  <div style="
+  margin: 100px auto;
+  width: 600px;
+  padding: 30px;
+  background-color: lightgreen;
+  border-radius: 10px;  
+  ">
+ <p>스크롤하면 사라지는 텍스트 (고양이 이미지 고정됨!!)</p>  
+</div>
+</body>
+</html>
