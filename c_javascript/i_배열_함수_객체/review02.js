@@ -87,7 +87,7 @@ function removeFromCart(id) {
 
 //? 5. 장바구니의 총합을 계산
 // : 전체 배열의 요소를 순회하여 단일한 값을 도출 (reduce 메서드)
-// > 배열.reduce((축적값, 순회요소, 순회요소인덱스, 원본배열) => {}, 초기값)
+// > 배열.reduce((축적값, 순회요소,   순회요소인덱스, 원본배열) => {}, 초기값)
 function calculateTotal() {
   let total = cart.reduce((sum, item) => {
     // 전체 요소를 순회하기 전까지 반환값은 sum 누적값 변수에 할당
