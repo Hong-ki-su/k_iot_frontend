@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //? 12개의 카드를 for반복문으로 생성하여 HTML 요소로 할당
     for (let i = 0; i < 12; i++) {
       cardContainer.innerHTML += `
-       <div class="card">
+        <div class="card">
           <div class="card-inner">
             <div class="card-front">
               <img src="./front.jpg" alt="카드의 앞면">

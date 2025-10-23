@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let attempts = [...secretNumber];
 
   // 결과를 표시할 요소를 가져옴
+  checkGuess();
 
   // 사용자의 추측을 입력받을 input 요소를 가져옴
+  for(let i = random_0_100; i++;) {
+
+  }
 
   // 추측 제출 버튼을 가져옴
 
