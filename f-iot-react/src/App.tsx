@@ -2,7 +2,11 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import Basic from '@/pages/a_basic'; 
 import RoutePages from '@/pages/b_Route';
+import Hooks from '@/pages/C_hooks/Index';
+
 import Navibar from './components/Navibar';
+import PostList from './_practices/a_basic/PostList';
+import PostDetail from './components/PostDetail';
 // 파일명 없으면 무조건! 해당 파일의 index 라는 이름의 파일을 가져옴
 
 function App() {
@@ -21,9 +25,12 @@ function App() {
           - 중첩된 자식 라우트 인식
         */}
         <Route path='/route/*' element={<RoutePages />} />
+        <Route path='/hooks' element={<Hooks />} />
+
+        <Route path='/practice/post' element={<PostList />} />
+        <Route path='/practice/post/:id' element={<PostDetail />} />
 
       </Routes>
-
     </>
   )
 }
