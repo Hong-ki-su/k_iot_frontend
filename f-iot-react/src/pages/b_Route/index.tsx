@@ -7,7 +7,7 @@ import C_useNavigate from './C_useNavigate'
 import D_useLocation from './D_useLocation'
 import E_NaviExample from './E_NaviExamle'
 import E_LocationExample from './E_LocationExample'
-import E_DetailPage from './E_Detailpage'
+import E_DetailPage from './E_DetailPage'
 
 //! React Router DOM
 // : React 애플리케이션에서 라우팅을 담당하는 "라이브러리"
