@@ -18,6 +18,18 @@ import Z_Dashboard from './pages/b_Route/Z_Dashboard';
 // 파일명 없으면 무조건! 해당 파일의 index 라는 이름의 파일을 가져옴
 
 function App() {
+  // const {전역상태내부의 속성 또는 함수명} =  
+  const darkMode = useUIStore(s => s.darkMode);
+  // 내부의 모든 속성과 메서드 호출 후 좌항에 일치하는 값만을 남김
+  // 필요한 속성, 메서드만 뽑아서 반환
+
+  const appStyle = {
+    minHeight: '100vh',
+    backgroundColor: darkMode ? "#111" : "#fff",
+    color: darkMode ? "#eee" : "#111",
+    transition: "all 0.3s ease"
+  }
+  
   return (
     <>
       {/* 경로와 상관없이 렌더링 */}
