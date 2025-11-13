@@ -13,9 +13,11 @@ function Index() {
       <ToggleSection title="1. Axios">
         <B_Axios />
       </ToggleSection>
-      <ToggleSection title="2. Article(REST API + REACT">
+      
+      <ToggleSection title="2. Article(REST API + REACT)">
         <C_ArticlePage />
       </ToggleSection>
+      
     </div>
   )
 }

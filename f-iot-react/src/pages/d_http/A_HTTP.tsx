@@ -23,8 +23,8 @@ import React from 'react'
   Authorization: Bearer abc123token - "로그인한 사용자의 토큰"
 
   {
-    "name": "홍기수", 
-    "email": "hong7575"
+    "name": "이승아", 
+    "email": "devgiants75"
   }
 */
 

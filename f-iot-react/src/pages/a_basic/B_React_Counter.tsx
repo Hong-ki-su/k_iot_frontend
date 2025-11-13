@@ -1,4 +1,4 @@
- import React, { useState } from 'react'
+import React, { useState } from 'react'
 
 // cf) 리액트 코드 스니펫(자동 완성 기능) 확장 플러그인
 // : React Snipptes 설치

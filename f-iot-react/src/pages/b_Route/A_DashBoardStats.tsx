@@ -1,5 +1,6 @@
 import React from 'react'
 
+// 통계
 function A_DashBoardStats() {
   return (
     <div>A_DashBoardStats</div>

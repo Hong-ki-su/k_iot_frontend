@@ -1,10 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
-function E_NaviExamle() {
+function E_NaviExample() {
   const navigate = useNavigate();
 
-    //^ === EventHandler ===
+  //^ === EventHandler ===
   const moveToDetail = () => {
     // navigate의 두 번째 인자로 state값 전달
     navigate('/route/detail', {
@@ -26,4 +26,4 @@ function E_NaviExamle() {
   )
 }
 
-export default E_NaviExamle
+export default E_NaviExample

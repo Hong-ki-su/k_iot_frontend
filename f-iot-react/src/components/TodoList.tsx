@@ -1,4 +1,4 @@
-import type { Todo } from '@/_practices/c_hooks/TodoAppLocalStroage'
+import type { Todo } from '@/_practices/c_hooks/TodoAppLocalStorage'
 import React from 'react'
 import TodoItem from './TodoItem';
 

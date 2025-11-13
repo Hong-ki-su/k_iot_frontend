@@ -1,4 +1,4 @@
- // index.tsx
+// index.tsx
 // : index 파일명은 해당 폴더의 메인 파일로 인식
 // - 임포트 시 폴더명만으로 가져오기 가능
 import React from 'react'
@@ -50,7 +50,7 @@ function Index() {
 
       <h2 style={h2Style}>5. Rendering: 조건부 렌더링</h2>
       <I_Rendering />
-   
+
       <h2 style={h2Style}>6. Handler: 리액트의 이벤트 핸들러</h2>
       <J_Handler />
     </div>

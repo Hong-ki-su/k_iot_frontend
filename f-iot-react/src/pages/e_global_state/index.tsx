@@ -1,10 +1,10 @@
-import ToggleSection from "@/components/ToggleSection";
 import React from "react";
+import ToggleSection from "@/components/ToggleSection";
 import A_Context from "./A_Context";
 import B_Zustand from "./B_Zustand";
 import SignIn from "./SignIn";
 import GlobalData from "./GlobalData";
-import TrunckReservationList from "../../components/TrunckReservationList";
+import TruckDetailPage from "./TruckDetailPage";
 
 function Index() {
   return (
@@ -28,9 +28,9 @@ function Index() {
       <ToggleSection title="4. zustand 연습(global-data)">
         <GlobalData />
       </ToggleSection>
-     
-      <ToggleSection title="5. zustand 연습(global-data)">
-        <TrunckReservationList />
+      
+      <ToggleSection title="5. zustand 연습(reservation)">
+        <TruckDetailPage />
       </ToggleSection>
 
     </div>

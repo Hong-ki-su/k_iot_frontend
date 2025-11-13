@@ -1,4 +1,4 @@
- // A_React.tsx
+// A_React.tsx
 
 //! rfc: 리액트 함수형 컴포넌트 생성
 // import React from 'react'

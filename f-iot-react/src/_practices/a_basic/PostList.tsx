@@ -1,4 +1,4 @@
-import PostCard from '@/components/PostCatd'
+import PostCard from '@/components/PostCard'
 import { posts } from '@/data/posts'
 import React from 'react'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import './Z_Product.css';
+import './Z_Products.css';
 
 //! === 상품 관련 Route 실습 예제 ===
 
@@ -70,7 +70,10 @@ function Z_Products() {
             {/* state를 사용하여 location 상태 전달 */}
             <Link
               to={`/products/${product.id}`} 
-              state={{ from: location.pathname }}
+              // 기본 경로 뿐만 아니라 쿼리까지 포함하여 state 전달
+              // : 상세페이지에서 뒤로 갈 때
+              // - /products?categroy=이전카테고리
+              state={{ from: location.pathname + location.search }}
             >
               {product.name}
             </Link>

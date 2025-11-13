@@ -2,13 +2,16 @@ import { useAuthStore } from "@/stores/auth.store";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function SignIn() {
-  const navigate = useNavigate();
-  const { login, isLoading, error, user } = useAuthStore();
-
+function SignIn() { 
+  //^ === Hooks ===
   const [loginId, setLoginId] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
+  const navigate = useNavigate();
+
+  const { login, isLoading, error } = useAuthStore();
+
+  //^ === Event Handler ===
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await login(loginId, password);
@@ -22,7 +25,7 @@ function SignIn() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h2>로그인</h2>
+        <span>로그인</span>
         <input
           type="text"
           placeholder="아이디"

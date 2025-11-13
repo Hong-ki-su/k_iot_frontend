@@ -1,4 +1,4 @@
- import React from 'react'
+import React from 'react'
 
 /*
 ! JSX(TSX)
@@ -61,8 +61,8 @@ function D_JSX() {
   const greeting = (name: string) => `안녕하세요 ${name}님`;
 
   const userInfo = {
-    name: '홍기수',
-    age: 25
+    name: '이승아',
+    age: 29
   }
 
   // 요소의 이벤트로 함수 전달
@@ -99,7 +99,7 @@ function D_JSX() {
         : 문자열, 숫자, 기타 JS 표현식 외의 객체도 모두 중괄호 내에서 작성
       */}
       <div>{welcomeMsg}</div>
-      <div>{greeting('홍기수')}</div>
+      <div>{greeting('이승아')}</div>
       <div>이름: {userInfo.name} / 나이: {userInfo.age}</div>
 
       {/* 

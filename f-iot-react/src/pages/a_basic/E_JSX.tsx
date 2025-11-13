@@ -1,11 +1,11 @@
- import React from 'react'
+import React from 'react'
 
-// https://cdn.pixabay.com/photo/2023/06/29/12/28/cats-8096304_1280.jpg
+// https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg
 
 const cat = {
   catUrl: 'https://cdn.pixabay.com/photo/',
-  description: '2023/06/29/12/28/',
-  imageId: 'cats-8096304_1280.jpg',
+  description: '2014/11/30/14/11/',
+  imageId: 'cat-551554_1280.jpg',
   name: '아기고양이',
   imageTheme: {
     width: '200px',

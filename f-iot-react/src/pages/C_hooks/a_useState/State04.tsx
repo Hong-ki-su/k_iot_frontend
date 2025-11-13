@@ -47,7 +47,7 @@ function State04() {
   //^ === Event Handler === //
   // 1) 입력 필드의 변경을 감지하는 이벤트 핸들러
   const handleSignUpInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
 
     setFormData({
       ...formData,
@@ -58,50 +58,55 @@ function State04() {
   // 2) 폼 제출 이벤트를 처리하는 이벤트 핸들러 
   // : 제출 전 각 입력 요소에 대한 유효성 검사
   const handleSignUpSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault(); 
 
-  //? 임시 오류 메시지 객체 생성
-  let tempError: FormData = {
-    id: '',
-    password: '',
-    confirmPassword: '',
-    email: ''
-  };
+    //? 임시 오류 메시지 객체 생성
+    let tempError: FormData = {
+      id: '',
+      password: '',
+      confirmPassword: '',
+      email: ''
+    };
 
-  let isValid = true; // 하나라도 유효하지 않으면 false로 지정
+    //? 폼의 유효성 상태를 추적하는 변수
+    let isValid = true; // 하나라도 유효하지 않으면 false로 지정
 
-  if (!id.trim()) {
-    tempError.id = '아이디를 입력해주세요';
-    isValid = false;
-  }
+    //? -- 필수 입력값 체크 --
+    if (!id.trim()) {
+      tempError.id = '아이디를 입력해주세요.';
+      isValid = false;
+    }
 
-  if(!password.trim()) {
-    tempError.password = '비밀번호를 입력해주세요';
-    isValid = false;
-  }
+    if (!password.trim()) {
+      tempError.password = '비밀번호를 입력해주세요.';
+      isValid = false;
+    }
 
-  if(!confirmPassword.trim()) {
-    tempError.confirmPassword = '비밀번호 확인을 입력해주세요';
-    isValid = false;
-  }
+    if (!confirmPassword.trim()) {
+      tempError.confirmPassword = '비밀번호 확인을 입력해주세요.';
+      isValid = false;
+    }
 
-  if(!email.trim()) {
-    tempError.email = '이메일을 입력해주세요';
-    isValid = false;
-  }
+    if (!email.trim()) {
+      tempError.email = '이메일을 입력해주세요.';
+      isValid = false;
+    }
 
-  // 비밀번호 일치 여부 검사
-  if (password && confirmPassword && password != confirmPassword) {
-    tempError.confirmPassword = '비밀번호 일치하지 않습니다';
-    isValid = false;
-  }
+    // -- 비밀번호 일치 여부 검사 --
+    if (password && confirmPassword && password != confirmPassword) {
+      tempError.confirmPassword = '비밀번호가 일치하지 않습니다.';
+      isValid = false;
+    }
 
-  setError(tempError)
-  
-  if(isValid) {
-    console.log('회원가입 데이터: ', formData);
-    alert(`축하합니다. ${id}님`)
-  }
+    setError(tempError);
+
+    if (isValid) {
+      // 모든 유효성 검사 통과 성공!
+      console.log('회원가입 데이터: ', formData);
+      alert(`축하합니다. ${id}님`);
+
+      setFormData(initialFormData);
+    }
   }
 
   return (

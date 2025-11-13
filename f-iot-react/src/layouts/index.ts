@@ -5,4 +5,4 @@ export const tmp = '';
 // - MainLayout.tsx
 // - AdminLayout.tsx
 // - Header.tsx
-// - Footer.tsc
+// - Footer.tsx

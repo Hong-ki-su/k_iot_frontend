@@ -1,5 +1,5 @@
 import TruckReservationDetail from '@/components/TruckReservationDetail';
-import TruckReservationList from '@/components/TrunckReservationList';
+import TruckReservationList from '@/components/TruckReservationList';
 import { useReservationStore } from '@/stores/reservation.store';
 import React, { useEffect } from 'react'
 import '@/pages/e_global_state/truck-pages.css'
@@ -53,7 +53,11 @@ function TruckDetailPage() {
         <ul className='truck-list' role='list'>
           {exampleTrucks.map(truck => (
             <li key={truck.id}>
-              <button type='button' className={`truck-list-btn ${selectedTruckId === truck.id ? "active" : ""}`}>
+              <button 
+                type='button' 
+                className={`truck-list-btn ${selectedTruckId === truck.id ? "active" : ""}`}
+                onClick={() => handleSelectTruck(truck.id)}
+              >
                 {truck.name}
               </button>
             </li>

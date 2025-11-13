@@ -5,7 +5,7 @@ import A_DashBoardSettings from './A_DashBoardSettings'
 import A_DashBoard from './A_DashBoard'
 import C_useNavigate from './C_useNavigate'
 import D_useLocation from './D_useLocation'
-import E_NaviExample from './E_NaviExamle'
+import E_NaviExample from './E_NaviExample'
 import E_LocationExample from './E_LocationExample'
 import E_DetailPage from './E_DetailPage'
 
