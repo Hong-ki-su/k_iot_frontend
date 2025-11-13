@@ -3,6 +3,8 @@ import React from "react";
 import A_Context from "./A_Context";
 import B_Zustand from "./B_Zustand";
 import SignIn from "./SignIn";
+import GlobalData from "./GlobalData";
+import TrunckReservationList from "../../components/TrunckReservationList";
 
 function Index() {
   return (
@@ -21,6 +23,14 @@ function Index() {
       
       <ToggleSection title="3. SignIn 페이지">
         <SignIn />
+      </ToggleSection>
+      
+      <ToggleSection title="4. zustand 연습(global-data)">
+        <GlobalData />
+      </ToggleSection>
+     
+      <ToggleSection title="5. zustand 연습(global-data)">
+        <TrunckReservationList />
       </ToggleSection>
 
     </div>
