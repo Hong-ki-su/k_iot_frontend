@@ -1,7 +1,8 @@
+//! src/types/emotion.d.ts
 // : emotion theme값 타입 정의
-// - 반드시 types 폴더 내에 작성 >> tsconfig.app.json의 inclues 배열 일치
+// - 반드시 types 폴더 내에 작성! 
+//   >>> tsconfig.app.json의 includes 배열 값과 일치!
 
-// emotion.d.ts
 import "@emotion/react";
 
 declare module '@emotion/react' {

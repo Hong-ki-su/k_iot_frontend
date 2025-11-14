@@ -1,7 +1,8 @@
+//! src/components/ThemeToggle.tsx
+// : 다크모드 토글 버튼
 
-import { useTheme } from '@emotion/react';
-import styled from '@emotion/styled';
-import React from 'react'
+import { useTheme } from "@emotion/react";
+import styled from "@emotion/styled";
 
 type Props = {
   toggle: () => void;

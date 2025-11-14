@@ -1,3 +1,4 @@
+//! src/styles/theme.ts
 // : 라이트/다크 테마 설정 파일
 
 import type { Theme } from "@emotion/react";

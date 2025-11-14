@@ -1,6 +1,6 @@
-
-import { useState } from 'react'
+import { ThemeProvider } from '@emotion/react'
 import './App.css'
+import { useState } from 'react'
 import { darkTheme, lightTheme } from './styles/theme';
 import { GlobalStyles } from './styles/global';
 import Dashboard from './components/Dashboard';
@@ -14,8 +14,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles theme={theme} />
-    <h1>G_CSS-REACT 프로젝트</h1>
-    <Dashboard toggleTheme={toggleTheme}/>
+      {/* <h1>G-CSS-REACT 프로젝트</h1> */}
+      <Dashboard toggleTheme={toggleTheme} />
     </ThemeProvider>
   )
 }
